@@ -1,0 +1,25 @@
+--Create an electronic store database
+
+CREATE TABLE electronics_store (id INTEGER PRIMARY KEY, name TEXT, size INTEGER, color TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO electronics_store VALUES (1,"television", 75,"black", 1200,3);
+INSERT INTO electronics_store VALUES (2, "tablet", 15,"white", 700, 5);
+INSERT INTO electronics_store VALUES (3, "smart_watch", 4, "gold", 500, 2);
+INSERT INTO electronics_store VALUES (4, "portable_speaker", 15, "red", 50, 10);
+INSERT INTO electronics_store VALUES (5, "airpods", 3, "lavender",200, 1);
+INSERT INTO electronics_store VALUES (6, "laptop", 16, "silver", 1900, 5);
+Insert INTO electronics_store VALUES (7, "alexa_echoshow", 8, "black", 85, 3);
+INSERT INTO electronics_store VALUES (8, "iphone",9,"green",1000, 20);
+INSERT INTO electronics_store VALUES (9, "playstation", 35, "white", 750, 1);
+INSERT INTO electronics_store VALUES (10, "camera",10, "black" ,600, 8);
+INSERT INTO electronics_store VALUES (11, "projector",25,"white", 200,3);
+INSERT INTO electronics_store VALUES (12, "kindle",12,"black", 80, 2);
+INSERT INTO electronics_store VALUES (13, "xbox", 37, "black", 750,4);
+INSERT INTO electronics_store VALUES (14, "nintendo_switch", 10,"black", 150, 8);
+INSERT INTO electronics_store VALUES (15, "tile", 2, "white", 35, 27);
+
+--Display the database ordered by price
+SELECT * FROM electronics_store ORDER BY price;
+
+--What is the total price of all items in the sstore
+SELECT SUM (price) FROM electronics_store;
